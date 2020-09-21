@@ -17,4 +17,8 @@ public class UserService {
 	public List<User> findAll(){
 		return repository.findAll();
 	}
+	public User findById(Long id) {
+		User user = repository.findById(id).orElse(null);
+		return user;
+	}
 }

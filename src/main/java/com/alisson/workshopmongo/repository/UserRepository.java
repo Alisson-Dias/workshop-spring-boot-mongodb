@@ -8,4 +8,5 @@ import com.alisson.workshopmongo.domain.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 
+
 }
